@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="css/mui.min.css" type="text/javascript" charset="utf-8"></script>
+	<script src="js/mui.js"></script>
+	<script type="text/javascript">
+		mui.init()
+	</script>
+
+</body>
+<!-- 主界面菜单同时移动 -->
+	<!-- 侧滑导航根容器 -->
+	<div class="mui-off-canvas-wrap mui-draggable">
+		<!-- 主页面容器 -->
+		<div class="mui-inner-wrap">
+			<!-- 菜单容器 -->
+			<aside class="mui-off-canvas-left" id="offCanvasSide">
+				<div class="mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<!-- 菜单具体展示内容 -->
+						<br>Name:YX ZHOU</br>
+						<br>UID:123456</br>
+						<ul class="mui-table-view">
+								<li class="mui-table-view-cell">
+									<a class="mui-navigate-right">
+										Item 1
+									</a>
+								</li>
+								<li class="mui-table-view-cell">
+									<a class="mui-navigate-right">
+										 Item 2
+									</a>
+								</li>
+								<li class="mui-table-view-cell">
+									<a class="mui-navigate-right">
+										 Item 3
+									</a>
+								</li>
+							</ul>
+					</div>
+				</div>
+			</aside>
+			<!-- 主页面标题 -->
+			<header class="mui-bar mui-bar-nav">
+				<a class="mui-icon mui-action-menu mui-icon-bars mui-pull-left" href="#offCanvasSide"></a>
+				<h1 class="mui-title">welcom to hap</h1>
+			</header>
+			
+			<!-- 主页面内容容器 -->
+			<div class="mui-content mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<!-- 主界面具体展示内容 -->
+					
+					<div id="slider" class="mui-slider" >
+					  <div class="mui-slider-group mui-slider-loop">
+						<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+						<div class="mui-slider-item mui-slider-item-duplicate">
+						  <a href="#">
+							<img src="http:\/\/placehold.it\/400x300">
+						  </a>
+						</div>
+						<!-- 第一张 -->
+						<div class="mui-slider-item">
+						  <a href="#">
+							<img src='4767f02e73538699ce3340f4315e6a0a.jpg'>
+						  </a>
+						</div>
+						<!-- 第二张 -->
+						<div class="mui-slider-item">
+						  <a href="#">
+							<img src='642c99530df9a3b1d50d4d67be1a5bf0.jpg'>
+						  </a>
+						</div>
+						<!-- 第三张 -->
+						<div class="mui-slider-item">
+						  <a href="#">
+							<img src='4a8090b630729630b3e053e852367081.jpg'>
+						  </a>
+						</div>
+						<!-- 第四张 -->
+						<div class="mui-slider-item">
+						  <a href="#">
+							<img src='ba4804289efc17862e45797f292caaaa.jpg'>
+						  </a>
+						</div>
+						<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+						<div class="mui-slider-item mui-slider-item-duplicate">
+						  <a href="#">
+							<img src="http:\/\/placehold.it\/400x300">
+						  </a>
+						</div>
+					  </div>
+					  <div class="mui-slider-indicator">
+						<div class="mui-indicator mui-active"></div>
+						<div class="mui-indicator"></div>
+						<div class="mui-indicator"></div>
+						<div class="mui-indicator"></div>
+					  </div>
+					</div>
+					<ul class="mui-table-view mui-grid-view mui-grid-9">
+					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+						<a href="profile.html">
+							<span class="mui-icon mui-icon-person"></span>
+							<div class="mui-media-body">Profile</div>
+							<script> mui('body').on('tap','a',function(){ window.top.location.href=this.href; }); </script>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+						<a href="chat.html">
+							<span class="mui-icon mui-icon-chatbubble"><span class="mui-badge mui-badge-red">5</span></span>
+							<div class="mui-media-body">Chat</div>
+							<script> mui('body').on('tap','a',function(){ window.top.location.href=this.href; }); </script>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+						<a href="setting.html">
+							<span class="mui-icon mui-icon-gear"></span>
+							<div class="mui-media-body">Setting</div>
+							<script> mui('body').on('tap','a',function(){ window.top.location.href=this.href; }); </script>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+						<a href="appiont.html">
+							<span class="mui-icon mui-icon-plus"></span>
+							<div class="mui-media-body">Appointment</div>
+							<script> mui('body').on('tap','a',function(){ window.top.location.href=this.href; }); </script>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+						<a href="News.html">
+							<span class="mui-icon mui-icon-search"></span>
+							<div class="mui-media-body">News</div>
+							<script> mui('body').on('tap','a',function(){ window.top.location.href=this.href; }); </script>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+						<a href="login.html">
+							<span class="mui-icon mui-icon-arrowup"></span>
+							<div class="mui-media-body">Login </div>
+							<script> mui('body').on('tap','a',function(){ window.top.location.href=this.href; }); </script>
+						</a>
+					</li>
+						</ul>
+					
+				</div>
+			</div>
+	   	 <div class="mui-off-canvas-backdrop"></div>
+		</div>
+	</div>
+</html>
